@@ -11,9 +11,12 @@ UPDATE patients
 SET allergies = 'NKA'
 WHERE allergies is null;
 
---Show all the columns from admissions where the patient was admitted and discharged on the same day
-SELECT * FROM admissions
-WHERE admission_date=discharge_date;
+--Show patient_id, first_name, last_name from patients whos primary_diagnosis is 'Dementia'
+SELECT patients.patient_id, patients.first_name, patients.last_name
+FROM patients
+JOIN admissions
+ON patients.patient_id=admissions.patient_id
+WHERE primary_diagnosis="Dementia"
 
 --Show unique first names from the patients table which only occurs once in the list
 SELECT DISTINCT first_name FROM patients
