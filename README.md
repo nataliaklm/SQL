@@ -1,5 +1,5 @@
 # SQL 
-The above file contains some examples of SQL exercises from online trainer - shttps://www.sql-practice.com/. 
+The above file contains some examples of SQL exercises from online trainer - https://www.sql-practice.com/. 
 The exercise statement is commented, and my answer is written below each comment. 
 
      Used commands: SELECT, UPDATE
